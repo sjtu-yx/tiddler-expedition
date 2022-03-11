@@ -1,0 +1,69 @@
+.outerBox {
+    top: 100px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 77;
+    /* opacity: 0.9; */
+}
+
+.littleBox {
+    width: 32px;
+    height: 32px;
+    /* background-color: rgb(245, 159, 0); */
+    display: inline-block;
+    outline: 2px ridge rgba(211, 43, 233, 0.8);
+    border-radius: 1rem;
+}
+.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    z-index: -99;
+}
+.bigTittle {
+    position: absolute;
+    left: 44%;
+    top: 0px;
+    background-image: -webkit-linear-gradient(left,rgb(218, 80, 16),#ffab66 10%,#fbff00 20%,#4bcc00 30%, #f7ccff 40%, #ff00bf 50%,#9407f3 60%,#9403e7 70%,#992d99 80%,#ff8a66 90%,rgb(216, 70, 25) 100%);
+    -webkit-text-fill-color: transparent;/* 将字体设置成透明色 */
+    -webkit-background-clip: text;/* 裁剪背景图，使文字作为裁剪区域向外裁剪 */
+    -webkit-background-size: 200% 100%; 
+    -webkit-animation: masked-animation 4s linear infinite;
+    font-size: 35px;
+    z-index: 66;
+}
+@keyframes masked-animation {
+    0% {
+        background-position: 0  0;
+    }
+    100% {
+        background-position: -100%  0;
+    }
+}
+.startGame {
+    top: 60px;
+    left: 47%;
+    position: relative;
+    text-align: center;
+    
+}
+.score {
+    top: 100px;
+    left: 52%;
+    position: absolute;
+    text-align: center;
+    font-size: 16px;
+    color: aliceblue;
+}
+.time {
+    top: 100px;
+    left: 40%;
+    position: absolute;
+    text-align: center;
+    font-size: 16px;
+    color: aliceblue;
+}
